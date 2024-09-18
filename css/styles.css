@@ -1,0 +1,283 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-- ROOT VARIABLES ------*/
+
+:root{
+    --black: #000;
+    --green: #247d72;
+    --white: #fff;
+    --orange:#fb9803;
+}
+
+/* ----GLOBAL STYLES (mobile first/small) -- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Roboto', 'Arial', sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--green);
+    width: 80%;
+}
+
+nav {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--orange);
+}
+
+nav a:focus {
+    background-color: var(--orange);
+    color: var(--black);
+    outline: none;
+}
+
+#top {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 2px solid var(--white);
+    padding: 16px 8px;
+}
+
+#top:hover {
+    border: 2px solid var(--orange);
+}
+
+main {
+    background-color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+h1 {   
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 10px 20px;
+}
+
+figure {
+    text-align: center;
+    position: relative;
+}
+
+figure img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;    
+}
+
+figure:nth-of-type(6) figcaption {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+    padding: 5px;
+    margin: 0 auto; 
+    
+}
+
+figure:nth-of-type(1) figcaption,
+figure:nth-of-type(3) figcaption,
+figure:nth-of-type(7) figcaption {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+    padding: 5px;
+    margin: 0 auto;     
+}
+
+figure:nth-of-type(2) figcaption,
+figure:nth-of-type(12) figcaption {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10px;
+    padding: 5px;
+    margin: 0 auto; 
+}
+
+figure:nth-of-type(4) figcaption,
+figure:nth-of-type(5) figcaption,
+figure:nth-of-type(8) figcaption,
+figure:nth-of-type(9) figcaption,
+figure:nth-of-type(10) figcaption,
+figure:nth-of-type(11) figcaption {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10px;
+    padding: 5px;
+    margin: 0 auto; 
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto; 
+    color: var(--white);
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+label {
+    padding-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid var(--orange);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--green);
+    font-weight: 700;
+}
+
+button {
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    padding: 8px;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--orange);
+}
+
+
+
+
+/* ---- MEDIA QUERY (medium) ---- */
+/* --- MEDIA QUERY (large) --- */
